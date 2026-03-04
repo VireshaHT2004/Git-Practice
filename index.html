@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO LIST</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+<body>
+
+<h1>TODO LIST</h1>
+
+<h2>Todo Tasks</h2>
+<div id="todoList" class="task-container"></div>
+
+<h2>Completed Tasks</h2>
+<div id="completedList" class="task-container"></div>
+
+<div class="form-section">
+    <h2>Add / Edit Task</h2>
+    <input type="text" id="titleInput" placeholder="Enter Title" />
+    <textarea id="descInput" placeholder="Enter Description"></textarea>
+
+    <div class="form-buttons">
+        <button class="cancel-btn" onclick="cancelEdit()">Cancel</button>
+        <button class="save-btn" id="saveBtn" onclick="saveTask()" disabled>Save</button>
+    </div>
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
